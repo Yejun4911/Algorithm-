@@ -6,9 +6,9 @@ def solution(prices):
     answer = []
     prices = deque(prices) # prices를 deque화
     while prices:
-        c = prices.popleft() # 
+        c = prices.popleft() # pop한 값을 변수 c에 대입
         count = 0
-        for i in prices:
+        for i in prices: #c와 남은 dequeue를 for를 통해서 가격이 떨어졌는지 유무를 확인하여 answer에 count를 append
             if c <= i:
                 count += 1
                 
