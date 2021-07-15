@@ -1,30 +1,17 @@
+from sys import stdin
+from collections import Counter # Counter 이용
+
 N = int(input())
-N_list = list(map(int,input().split()))
+arr_n = list(map(int,stdin.readline().split()))
 M = int(input())
-M_list = list(map(int,input().split()))
+arr_m = list(map(int,stdin.readline().split()))
 
-dic={}
-N_list.sort()
-
-
-start,end=0,max(N_list)
-
-while start<=end:
-    i=0
-    M_list[i]
-    mid = start+end // 2
-
-    if N_list[mid]<M_list[i]:
-        mid+=1
-    elif N_list[mid]==M_list[i]:
-        dic[M_list[i]]+=1
-        mid+=1
+a=Counter(arr_n) # list 안에 카운트를 미리 구한다.
+str2=""
+for i in arr_m: # 찾고자 하는 정수의 개수를 카운터를 이용해 미리 구해놓은 리스트를 안에서 해당 정수의 카운트를 찾아 append
+    if i in a:
+        str2+=str(a[i])+" "
     else:
+        str2+=str(0)+" "
         
-
-
-
-
-
-
-
+print(str2)
