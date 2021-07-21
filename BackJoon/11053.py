@@ -1,7 +1,7 @@
 N =int(input())
 A = list(map(int,input().split()))
 temp=A[0]
-cnt=0
+cnt=1
 
 for i in A:
     if temp<i:
