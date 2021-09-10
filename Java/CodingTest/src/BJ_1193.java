@@ -9,15 +9,31 @@ public class BJ_1193 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-
         int N = Integer.parseInt(br.readLine());
-        int cnt=0;
-        while(cnt==N){
+        int count = 0;
+        int T=2;
+        while(true){
+            if(count==N) break;
 
-            System.out.println(cnt+"/"+cnt);
+            if(T%2==0){
+                for(int i=1; i<=T-1; i++){
+                    count++;
+                    if(count==N){
+                        System.out.println((T-i)+"/"+(i));
+                        break;
+                    }
+                }
+            }else{
+                for(int i=1; i<=T-1; i++){
+                    count++;
+                    if(count==N){
+                        System.out.println((i)+"/"+(T-i));
+                        break;
+                    }
 
-            cnt++;
+                }
+            }
+            T++;
         }
-
     }
 }
