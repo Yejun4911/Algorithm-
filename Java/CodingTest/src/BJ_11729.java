@@ -13,11 +13,4 @@ public class BJ_11729 {
 
 
     }
-    private static void hanoi(int x, int y,int z){
-        if(count==1){
-            total=1;
-        }
-
-
-    }
 }
