@@ -21,7 +21,6 @@ public class BJ_2798 {
         for(int i=0; i<=arr.length-3; i++){
             for(int j=i+1; j<arr.length; j++){
                 for(int k=j+1; k<arr.length; k++){
-
                     if(arr[i]+arr[j]+arr[k]>max && arr[i]+arr[j]+arr[k]<=M) max = arr[i]+arr[j]+arr[k];
                 }
             }
