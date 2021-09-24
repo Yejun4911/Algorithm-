@@ -7,7 +7,6 @@
 		* pop - 값 입력 pop()
 		* push - 값 출력 (list.append)
 		* peek - 값 조회 
-
 * 스택 구현 방법
 	* 1) 직접 구현 
 	* 2) 이미 구현된 클래스 import 
