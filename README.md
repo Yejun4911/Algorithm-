@@ -2,12 +2,12 @@
 * 스택이란?
  - 영어로 Stack '쌓다' 라는 의미
 
+
 * 프로그래밍에서 목록 혹은 리스트에서 접근이 한쪽에서만 가능한 구조 
 	* Last-In, First-Out
 		* pop - 값 입력 pop()
 		* push - 값 출력 (list.append)
 		* peek - 값 조회 
-
 * 스택 구현 방법
 	* 1) 직접 구현 
 	* 2) 이미 구현된 클래스 import 
