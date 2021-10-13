@@ -30,7 +30,7 @@ public class BJ_18258 {
                 if(queue.isEmpty()){
                     sb.append(-1).append("\n");
                 }else{
-                    queue.poll();
+                    sb.append(queue.poll()).append("\n");
                 }
             }
             else if(active.equals("size")) sb.append(queue.size()).append("\n");
