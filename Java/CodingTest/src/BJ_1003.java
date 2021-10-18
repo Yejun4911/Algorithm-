@@ -3,35 +3,30 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class BJ_1003 {
-    static int zeroCnt;
-    static int oneCnt;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int N = Integer.parseInt(br.readLine());
-
+        int[] arr = new int[N];
+        int[] zero = new int[41];
+        int[] one = new int[41];
+        zero[0]=1;
+        zero[1]=0;
+        one[0]=0;
+        one[1]=1;
         for(int i=0; i<N; i++) {
-            zeroCnt=0;
-            oneCnt=0;
-            int temp = Integer.parseInt(br.readLine());
-            int result = fibonacci(temp);
-
-            sb.append(zeroCnt+" "+oneCnt).append("\n");
+            arr[i] = Integer.parseInt(br.readLine());
         }
-        System.out.println(sb);
+        for(int i=2; i<41; i++){
+            zero[i]=zero[i-1]+zero[i-2];
+            one[i]=one[i-1]+one[i-2];
+        }
+
+        for(int s : arr){
+            System.out.println(zero[s]+" "+one[s]);
+        }
 
 
     }
 
-    private static int fibonacci(int n){
-        if (n == 0) {
-            zeroCnt++;
-            return 0;
-        } else if (n == 1) {
-            oneCnt++;
-            return 1;
-        } else {
-            return fibonacci(n-1) + fibonacci(n-2);
-        }
-    }
 }
