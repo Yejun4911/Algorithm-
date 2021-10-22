@@ -22,7 +22,7 @@ public class BJ_2805 {
         }
 
         Arrays.sort(treeList);
-
+       
         int high = max;
         int low = 0;
 
