@@ -7,26 +7,27 @@ public class BJ_2309 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] arr = new int[9];
+        int sum = 0;
+
         for (int i=0; i<9; i++) {
             arr[i]=Integer.parseInt(br.readLine());
+            sum+=arr[i];
         }
+
         Arrays.sort(arr);
-        int[] tempArr = new int[7];
 
-        for (int i = 0; i < arr.length-7; i++) {
-            System.out.println(arr[i]);
-            int point = 0;
-            int sum = 0;
-            for (int j = i; j < i+7; j++){
-                System.out.println(arr[i]+" "+arr[j]);
-                sum+=arr[j];
-                tempArr[point++] = arr[j];
-                if(sum == 100 && point == 6) break;
+        for( int i = 0; i < 9; i++ ){
+            for ( int j = i; j < 9; j++){
+                if( sum - arr[i] - arr[j] == 100) {
+                    for ( int k = 0; k < 9; k++ ) {
+                        if( i==k || j==k ) {
+                            continue;
+                        }
+                        System.out.println(arr[k]);
+                    }
+                    System.exit(0);
+                }
             }
-        }
-
-        for( int s : tempArr ){
-            System.out.println(s);
         }
     }
 }
