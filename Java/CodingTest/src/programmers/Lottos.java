@@ -1,6 +1,7 @@
 package programmers;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Lottos {
     public static void main(String[] args) {
@@ -12,7 +13,6 @@ public class Lottos {
         int count = 0;
         int[] rank = {6,5,4,3,2,0};
         ArrayList<Integer> list = new ArrayList<>();
-
         for (int i = 0; i < win_nums.length; i++) {
             list.add(win_nums[i]);
         }
