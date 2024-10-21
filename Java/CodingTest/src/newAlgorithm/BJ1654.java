@@ -11,6 +11,7 @@ public class BJ1654 {
 
         StringTokenizer st = new StringTokenizer(br.readLine());
 
+
         int N = Integer.parseInt(st.nextToken());
         int M = Integer.parseInt(st.nextToken());
 
