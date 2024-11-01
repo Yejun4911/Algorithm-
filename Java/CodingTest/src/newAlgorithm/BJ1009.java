@@ -12,8 +12,7 @@ public class BJ1009 {
 
         int N = Integer.parseInt(br.readLine());
         StringBuilder sb =  new StringBuilder();
-        for (int i = 0; i < N; i++) {
-            StringTokenizer st = new StringTokenizer(br.readLine());
+           StringTokenizer st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
             int b = Integer.parseInt(st.nextToken());
 
