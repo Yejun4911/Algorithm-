@@ -25,4 +25,5 @@ public class BJ1009 {
         }
 
     }
+    public boolean
 }
