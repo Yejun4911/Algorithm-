@@ -4,7 +4,7 @@ public class PG_340199 {
     public static void main(String[] args) {
         int[] wallet = {30,15};
         int[] bill = {26,17} ;
-        solution(wallet,bill);
+        solution(wallet,bill);//
     }
     public static int solution(int[] wallet, int[] bill) {
         int answer = 0;
