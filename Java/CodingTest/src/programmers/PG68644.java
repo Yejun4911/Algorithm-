@@ -7,7 +7,7 @@ import java.util.List;
 public class PG68644 {
     public static void main(String[] args) {
 
-        solution();
+//        solution();
     }
     public static int[] solution(int[] numbers) {
         int[] answer = {};

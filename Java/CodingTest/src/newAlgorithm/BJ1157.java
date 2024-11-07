@@ -23,14 +23,6 @@ public class BJ1157 {
         long count = hashMap.values().stream()
                 .filter(value -> value == maxValue)
                 .count();
-        System.out.println((count > 1) ? "?" : getKeyByValue(maxValue));
     }
-    public static String getKeyByValue(HashMap<String, Integer> map, int value) {
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            if (entry.getValue() == value) {
-                return entry.getKey();
-            }
-        }
-        return "-1"; // 값이 없을 때의 기본 반환값
-    }
+
 }
