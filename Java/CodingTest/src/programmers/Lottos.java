@@ -16,7 +16,8 @@ public class Lottos {
         for (int i = 0; i < win_nums.length; i++) {
             list.add(win_nums[i]);
         }
-
+        String temp;
+        temp.co
         for (int i = 0; i < lottos.length; i++) {
             if (lottos[i] == 0) {
                 zeroCount++;
