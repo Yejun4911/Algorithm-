@@ -11,8 +11,6 @@ public class PG_132267 {
 
             answer += (n/a) * b;
             n = (n/a) * b + (n%a);
-////
-
         }
         return answer;
     }
