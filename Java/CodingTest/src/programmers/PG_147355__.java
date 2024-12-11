@@ -13,7 +13,7 @@ public class PG_147355__ {
             a += t.charAt(i);
 
             for (int j = i+1; j<i+p.length(); j++) {
-                a += t.charAt(j);
+                a += t.charAt(j);//
             }
 
             if(Long.parseLong(a) <= pInt) {
